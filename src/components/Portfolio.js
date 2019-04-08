@@ -7,38 +7,38 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <section id="work" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="title-box text-center">
-                <h3 class="title-a">Portfolio</h3>
-                <p class="subtitle-a">
+      <section id="work" className="portfolio-mf sect-pt4 route">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="title-box text-center">
+                <h3 className="title-a">Portfolio</h3>
+                <p className="subtitle-a">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
-                <div class="line-mf" />
+                <div className="line-mf" />
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="work-box">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-1.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-1.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Lorem impsum dolor</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2018</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Lorem impsum dolor</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2018</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>
@@ -46,24 +46,24 @@ class Portfolio extends Component {
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="work-box">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-2.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-2.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Loreda Cuno Nere</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2018</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Loreda Cuno Nere</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2018</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>
@@ -71,24 +71,24 @@ class Portfolio extends Component {
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="work-box">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-3.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-3.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Mavrito Lana Dere</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2018</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Mavrito Lana Dere</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2018</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>
@@ -96,24 +96,24 @@ class Portfolio extends Component {
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="work-box">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-4.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-4.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Bindo Laro Cado</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2018</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Bindo Laro Cado</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2018</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>
@@ -121,24 +121,24 @@ class Portfolio extends Component {
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="work-box">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-5.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-5.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Studio Lena Mado</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2018</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Studio Lena Mado</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2018</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>
@@ -146,24 +146,24 @@ class Portfolio extends Component {
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="work-box">
+            <div className="col-md-4">
+              <div className="work-box">
                 <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-                  <div class="work-img">
-                    <img src={require("../images/work-6.jpg")} alt="" class="img-fluid" />
+                  <div className="work-img">
+                    <img src={require("../images/work-6.jpg")} alt="" className="img-fluid" />
                   </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <h2 class="w-title">Studio Big Bang</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Design</span> /{" "}
-                          <span class="w-date">18 Sep. 2017</span>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Studio Big Bang</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">Web Design</span> /{" "}
+                          <span className="w-date">18 Sep. 2017</span>
                         </div>
                       </div>
-                      <div class="col-sm-4">
-                        <div class="w-like">
-                          <span class="fa fa-plus-square-o" />
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="fa fa-plus-square-o" />
                         </div>
                       </div>
                     </div>

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = { navClass: '' };
-
+    this.links = ['home','about','services','work','contact'];
     this.handleScroll = this.handleScroll.bind(this)
   }
   componentDidMount() {
@@ -52,36 +53,25 @@ class Nav extends Component {
             id="navbarDefault"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
-                  Home
-                </a>
+            {
+              this.links.map((link) => {
+                return <li className="nav-item">
+                <Link
+                className="nav-link js-scroll"
+                activeClass="active"
+                to={link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {link}
+              </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#service">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#blog">
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
-                  Contact
-                </a>
-              </li>
+              })
+            }
+              
+              
             </ul>
           </div>
         </div>

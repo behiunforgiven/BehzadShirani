@@ -5,6 +5,7 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css';
@@ -23,6 +24,7 @@ class App extends Component {
         <About />
         <Services/>
         <Portfolio/>
+        <Contact/>
       </div>
     );
   }

@@ -7,7 +7,7 @@ class Services extends Component {
   }
   render() {
     return (
-      <section id="service" className="services-mf route">
+      <section id="services" className="services-mf route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
