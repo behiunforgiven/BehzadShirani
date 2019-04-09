@@ -501,7 +501,7 @@ a:hover {
 }
 
 .navbar-b .navbar-brand {
-  color: #fff !important;
+  color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
 }

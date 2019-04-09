@@ -38,7 +38,7 @@ class Nav extends Component {
                 to="page-top"
                 spy={false}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={500}
               >
                 Behzad Shirani
@@ -71,7 +71,7 @@ class Nav extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={800}
               >
                 {link}
               </Link>
