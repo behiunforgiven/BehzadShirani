@@ -15,7 +15,7 @@ class About extends Component {
                       <div className="col-sm-6 col-md-5">
                         <div className="about-img">
                           <img
-                            src={require('../images/testimonial-2.jpg')}
+                            src={require('../images/behzad-shirani.jpg')}
                             className="img-fluid rounded b-shadow-a"
                             alt=""
                           />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Nav extends Component {
   constructor(props) {
@@ -32,9 +32,17 @@ class Nav extends Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
-            DevFolio
-          </a>
+          
+          <Link
+                className="navbar-brand js-scroll"
+                to="page-top"
+                spy={false}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Behzad Shirani
+              </Link>
           <button
             className="navbar-toggler collapsed"
             type="button"
@@ -55,7 +63,7 @@ class Nav extends Component {
             <ul className="navbar-nav">
             {
               this.links.map((link) => {
-                return <li className="nav-item">
+                return <li key={link} className="nav-item">
                 <Link
                 className="nav-link js-scroll"
                 activeClass="active"
