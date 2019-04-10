@@ -69,7 +69,7 @@ class Nav extends Component {
                 activeClass="active"
                 to={link}
                 spy={true}
-                smooth={true}
+                smooth="easeInOutQuint"
                 offset={-70}
                 duration={800}
               >
