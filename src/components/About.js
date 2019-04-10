@@ -43,7 +43,7 @@ class About extends Component {
                       </div>
                     </div>
                     <div className="skill-mf">
-                      <p className="title-s">Skill</p>
+                      <p className="title-s">Skills</p>
                       <span>HTML</span> <span className="pull-right">85%</span>
                       <div className="progress">
                         <div
