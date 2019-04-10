@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import IntroBackground from '../images/intro-bg.jpg';
+import IntroBackground from '../images/intro-bg-min.jpg';
 
 class Intro extends Component {
   state = {};

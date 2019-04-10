@@ -459,6 +459,10 @@ a:hover {
   color: #fff;
 }
 
+.navbar-b.navbar-trans .navbar-brand {
+  color: #fff;
+}
+
 .navbar-b.navbar-trans .show > .nav-link,
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,

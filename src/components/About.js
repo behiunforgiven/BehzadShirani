@@ -25,19 +25,19 @@ class About extends Component {
                         <div className="about-info">
                           <p>
                             <span className="title-s">Name: </span>{" "}
-                            <span>Morgan Freeman</span>
+                            <span>Behzad Shirani</span>
                           </p>
                           <p>
                             <span className="title-s">Profile: </span>{" "}
-                            <span>full stack developer</span>
+                            <span>Software Developer</span>
                           </p>
                           <p>
                             <span className="title-s">Email: </span>{" "}
-                            <span>contact@example.com</span>
+                            <span>shirani.developer[at]gmail</span>
                           </p>
                           <p>
                             <span className="title-s">Phone: </span>{" "}
-                            <span>(617) 557-0089</span>
+                            <span>+98-913-266-6946</span>
                           </p>
                         </div>
                       </div>
