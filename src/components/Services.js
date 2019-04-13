@@ -73,59 +73,6 @@ class Services extends Component {
                 </div>
               </div>
             </div>
-            
-            <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-camera" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Photography</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-paint-brush" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Graphic Design</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-bar-chart" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Marketing Services</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
