@@ -44,7 +44,7 @@ class About extends Component {
                     </div>
                     <div className="skill-mf">
                       <p className="title-s">Skills</p>
-                      <span>HTML</span> <span className="pull-right">85%</span>
+                      <span>ASP.NET</span> <span className="pull-right">85%</span>
                       <div className="progress">
                         <div
                           className="progress-bar"
@@ -55,36 +55,36 @@ class About extends Component {
                           aria-valuemax="100"
                         />
                       </div>
-                      <span>CSS3</span> <span className="pull-right">75%</span>
+                      <span>Android</span> <span className="pull-right">80%</span>
                       <div className="progress">
                         <div
                           className="progress-bar"
                           role="progressbar"
-                          style={{width: "75%" }}
-                          aria-valuenow="75"
+                          style={{width: "80%" }}
+                          aria-valuenow="80"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         />
                       </div>
-                      <span>PHP</span> <span className="pull-right">50%</span>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{width: "50%" }}
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        />
-                      </div>
-                      <span>JAVASCRIPT</span>{" "}
-                      <span className="pull-right">90%</span>
+                      <span>C#</span> <span className="pull-right">90%</span>
                       <div className="progress">
                         <div
                           className="progress-bar"
                           role="progressbar"
                           style={{width: "90%" }}
                           aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        />
+                      </div>
+                      <span>JAVASCRIPT</span>{" "}
+                      <span className="pull-right">75%</span>
+                      <div className="progress">
+                        <div
+                          className="progress-bar"
+                          role="progressbar"
+                          style={{width: "75%" }}
+                          aria-valuenow="75"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         />
@@ -97,23 +97,15 @@ class About extends Component {
                         <h5 className="title-left">About me</h5>
                       </div>
                       <p className="lead">
-                        Curabitur non nulla sit amet nisl tempus convallis quis
-                        ac lectus. Curabitur arcu erat, accumsan id imperdiet
-                        et, porttitor at sem. Praesent sapien massa, convallis a
-                        pellentesque nec, egestas non nisi. Nulla porttitor
-                        accumsan tincidunt.
+                      I graduated of Bachelor of computer software engineering and spent last 10 years – since 2008 how to be a greate programmer.
+                      I started as a .Net web developer with ASP.NET web forms then ASP.NET MVC. According to my passion for web development, I tried to learn front-end libraries and frameworks such as JavaScript, jQuery, AngularJs and recently i'm trying to do some projects with ReactJs.
                       </p>
                       <p className="lead">
-                        Mauris blandit aliquet elit, eget tincidunt nibh
-                        pulvinar a. Vivamus suscipit tortor eget felis porttitor
-                        volutpat. Vestibulum ac diam sit amet quam vehicula
-                        elementum sed sit amet dui. porttitor at sem.
+                      I've done some Mobile Application projects with Android Native (Java and Kotlin) and React Native.
                       </p>
                       <p className="lead">
-                        Nulla porttitor accumsan tincidunt. Quisque velit nisi,
-                        pretium ut lacinia in, elementum id enim. Nulla
-                        porttitor accumsan tincidunt. Mauris blandit aliquet
-                        elit, eget tincidunt nibh pulvinar a.
+                      Highly motivated to learning and share all I know to the others.
+                      As a team member, I communicate EFFECTIVELY with my team mates.
                       </p>
                     </div>
                   </div>

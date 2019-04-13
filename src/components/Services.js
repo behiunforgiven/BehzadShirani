@@ -14,31 +14,15 @@ class Services extends Component {
               <div className="title-box text-center">
                 <h3 className="title-a">Services</h3>
                 <p className="subtitle-a">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                These are the services you can hire me for.
                 </p>
                 <div className="line-mf" />
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-desktop" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Web Design</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
+
+          <div className="col-md-4">
               <div className="service-box">
                 <div className="service-ico">
                   <span className="ico-circle">
@@ -55,6 +39,41 @@ class Services extends Component {
                 </div>
               </div>
             </div>
+          <div className="col-md-4">
+              <div className="service-box">
+                <div className="service-ico">
+                  <span className="ico-circle">
+                    <i className="fa fa-mobile" />
+                  </span>
+                </div>
+                <div className="service-content">
+                  <h2 className="s-title">Mobile Development</h2>
+                  <p className="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          <div className="col-md-4">
+              <div className="service-box">
+                <div className="service-ico">
+                  <span className="ico-circle">
+                    <i className="fa fa-desktop" />
+                  </span>
+                </div>
+                <div className="service-content">
+                  <h2 className="s-title">Desktop Development</h2>
+                  <p className="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <div className="col-md-4">
               <div className="service-box">
                 <div className="service-ico">
@@ -72,23 +91,7 @@ class Services extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-mobile" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Responsive Design</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
             <div className="col-md-4">
               <div className="service-box">
                 <div className="service-ico">
