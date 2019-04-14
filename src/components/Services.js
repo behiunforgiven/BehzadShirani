@@ -31,10 +31,10 @@ class Services extends Component {
                 </div>
                 <div className="service-content">
                   <h2 className="s-title">Web Development</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
+                  <p className="s-description text-justify">
+                  Develop new web applications using ASP.NET, web services, and MVC.<br/>
+                  In front-end have experience with jQuery, AnglarJs and React.<br/>
+                  Design and implement websites with Wordpress.
                   </p>
                 </div>
               </div>
