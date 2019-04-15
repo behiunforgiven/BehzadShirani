@@ -26,7 +26,6 @@ class Contact extends Component {
                         <form
                           action=""
                           method="post"
-                          role="form"
                           className="contactForm"
                         >
                           <div id="sendmessage">
@@ -129,28 +128,28 @@ class Contact extends Component {
                       <div className="socials">
                         <ul>
                           <li>
-                            <a href="#">
+                            <a href="https://facebook.com/behiunforgiven">
                               <span className="ico-circle">
                                 <i className="fa fa-facebook" />
                               </span>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="https://instagram.com/behiunforgiven">
                               <span className="ico-circle">
                                 <i className="fa fa-instagram" />
                               </span>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="https://twitter.com/behiunforgiven">
                               <span className="ico-circle">
                                 <i className="fa fa-twitter" />
                               </span>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="https://pinterest.com/behiunforgiven">
                               <span className="ico-circle">
                                 <i className="fa fa-pinterest" />
                               </span>

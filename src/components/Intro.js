@@ -15,7 +15,7 @@ class Intro extends Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <img src={require("../images/Logo3.png")} width="100" height="100" />
+              <img src={require("../images/Logo3.png")} width="100" height="100" alt="Behzad Shirani"/>
               <h1 className="intro-title mb-4">I am Behzad Shirani</h1>
               <p className="intro-subtitle">
                 <strong className="text-slider" >Software Developer</strong>
