@@ -1,10 +1,37 @@
 import React, { Component } from "react";
+import ServiceItem from './SerivceItem';
 
 class Services extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-  }
+    this.services = [
+      {
+        id: 1,
+        title: "Web Development",
+        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
+        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
+        "Design and implement websites with Wordpress."],
+        icon: "code"
+      },
+      {
+        id: 2,
+        title: "Mobile Development",
+        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
+        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
+        "Design and implement websites with Wordpress."],
+        icon: "mobile"
+      },
+      {
+        id: 3,
+        title: "Desktop Development",
+        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
+        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
+        "Design and implement websites with Wordpress."],
+        icon: "desktop"
+      }
+    ];
+   }
   render() {
     return (
       <section id="services" className="services-mf route">
@@ -22,57 +49,11 @@ class Services extends Component {
           </div>
           <div className="row">
 
-          <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-code" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Web Development</h2>
-                  <p className="s-description text-justify">
-                  Develop new web applications using ASP.NET, web services, and MVC.<br/>
-                  In front-end have experience with jQuery, AnglarJs and React.<br/>
-                  Design and implement websites with Wordpress.
-                  </p>
-                </div>
-              </div>
-            </div>
-          <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-mobile" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Mobile Development</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
-          <div className="col-md-4">
-              <div className="service-box">
-                <div className="service-ico">
-                  <span className="ico-circle">
-                    <i className="fa fa-desktop" />
-                  </span>
-                </div>
-                <div className="service-content">
-                  <h2 className="s-title">Desktop Development</h2>
-                  <p className="s-description text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                    Magni tempora perferendis eum non provident.
-                  </p>
-                </div>
-              </div>
-            </div>
+          {this.services.map(service => {
+            return (
+              <ServiceItem key={service.id} {...service}/>
+            );
+          })}
           </div>
         </div>
       </section>

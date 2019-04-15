@@ -1,10 +1,58 @@
 import React, { Component } from "react";
+import PortfolioItem from "./PortfolioItem";
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
+
     this.state = {};
+
+    this.portfos = [
+      {
+        id: 1,
+        image: require("../images/work-1.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      },
+      {
+        id: 2,
+        image: require("../images/work-2.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      },
+      {
+        id: 3,
+        image: require("../images/work-3.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      },
+      {
+        id: 4,
+        image: require("../images/work-4.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      },
+      {
+        id: 5,
+        image: require("../images/work-5.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      },
+      {
+        id: 6,
+        image: require("../images/work-6.jpg"),
+        title: "Lorem impsum dolor",
+        category: "Web Design",
+        date: "18 Sep. 2018"
+      }
+    ];
   }
+
   render() {
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
@@ -21,156 +69,11 @@ class Portfolio extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-1.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem impsum dolor</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2018</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-2.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Loreda Cuno Nere</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2018</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-3.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Mavrito Lana Dere</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2018</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-4.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Bindo Laro Cado</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2018</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-5.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Studio Lena Mado</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2018</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={require("../images/work-6.jpg")} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Studio Big Bang</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">Web Design</span> /{" "}
-                          <span className="w-date">18 Sep. 2017</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="fa fa-plus-square-o" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+            {this.portfos.map(portfo => {
+              return (
+                <PortfolioItem key={portfo.id} {...portfo}/>
+              );
+            })}
           </div>
         </div>
       </section>
