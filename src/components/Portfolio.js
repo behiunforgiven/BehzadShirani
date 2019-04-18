@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PortfolioItem from "./PortfolioItem";
+import PortfolioItemDialog from "./PortfolioItemDialog";
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
-
+    this.state = { openDialog: false };
     this.portfos = [
       {
         id: 1,
@@ -51,7 +51,18 @@ class Portfolio extends Component {
         date: "18 Sep. 2018"
       }
     ];
+    this.afterClosePopup = this._afterClosePopup.bind(this);
   }
+
+  _afterClosePopup = () => {
+    this.setState({
+      openDialog: false
+    });
+  };
+
+  handleOpen = (item) => {
+    this.setState({ openDialog: true,item:item });
+  };
 
   render() {
     return (
@@ -71,11 +82,21 @@ class Portfolio extends Component {
           <div className="row">
             {this.portfos.map(portfo => {
               return (
-                <PortfolioItem key={portfo.id} {...portfo}/>
+                <PortfolioItem 
+                  openDialog={() => this.handleOpen(portfo)} 
+                  key={portfo.id} 
+                  {...portfo}/>
               );
             })}
           </div>
         </div>
+        {this.state.openDialog ? (
+          <PortfolioItemDialog 
+            open={this.state.openDialog} 
+            item={this.state.item}
+            close={this.afterClosePopup}
+            />
+        ) : null}
       </section>
     );
   }

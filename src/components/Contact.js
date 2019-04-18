@@ -9,7 +9,9 @@ class Contact extends Component {
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{backgroundImage: `url(${require('../images/overlay-bg.jpg')})`}}
+        style={{
+          backgroundImage: `url(${require("../images/overlay-bg.jpg")})`
+        }}
       >
         <div className="overlay-mf" />
         <div className="container">
@@ -23,11 +25,7 @@ class Contact extends Component {
                         <h5 className="title-left">Send Message Us</h5>
                       </div>
                       <div>
-                        <form
-                          action=""
-                          method="post"
-                          className="contactForm"
-                        >
+                        <form action="" method="post" className="contactForm">
                           <div id="sendmessage">
                             Your message has been sent. Thank you!
                           </div>
@@ -114,14 +112,15 @@ class Contact extends Component {
                         </p>
                         <ul className="list-ico">
                           <li>
-                            <span className="fa fa-map-marker" /> 329 WASHINGTON ST
-                            BOSTON, MA 02108
+                            <span className="fa fa-map-marker" /> 329 WASHINGTON
+                            ST BOSTON, MA 02108
                           </li>
                           <li>
                             <span className="fa fa-phone" /> (617) 557-0089
                           </li>
                           <li>
-                            <span className="fa fa-envelope" /> contact@example.com
+                            <span className="fa fa-envelope" />{" "}
+                            contact@example.com
                           </li>
                         </ul>
                       </div>

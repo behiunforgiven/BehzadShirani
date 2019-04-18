@@ -1,24 +1,14 @@
 import React, { Component } from "react";
 
+
 export default class PortfolioItem extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { open: false };
-  }
-
-  handleOpen = () => {
-    this.setState({ open: true });
-  };
-
-  handleClose = () => {
-    this.setState({ open: false });
-  };
+  
 
   render() {
     return (
-      <div>
+      <div className="col-md-4">
         <div className="work-box">
-          <div onClick={this.handleOpen}>
+          <div className="work-container" onClick={() => this.props.openDialog(this.props)}>
             <div className="work-img">
               <img src={this.props.image} alt="" className="img-fluid" />
             </div>
@@ -35,6 +25,7 @@ export default class PortfolioItem extends Component {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }

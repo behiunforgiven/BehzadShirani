@@ -1260,3 +1260,7 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+.work-container {
+  cursor: pointer;
+}

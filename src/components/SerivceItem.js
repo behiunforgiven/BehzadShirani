@@ -12,7 +12,7 @@ export default class SerivceItem extends Component {
           </div>
           <div className="service-content">
             <h2 className="s-title">{this.props.title}</h2>
-            <p className="s-description text-justify" >{this.props.description}</p>
+            <p className="s-description text-justify" dangerouslySetInnerHTML={{__html: this.props.description}}></p>
           </div>
         </div>
       </div>

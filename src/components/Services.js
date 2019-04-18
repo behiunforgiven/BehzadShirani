@@ -9,25 +9,25 @@ class Services extends Component {
       {
         id: 1,
         title: "Web Development",
-        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
-        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
-        "Design and implement websites with Wordpress."],
+        description: "Develop new web applications using ASP.NET, web services, and MVC.<br/>"+
+        "In front-end have experience with jQuery, AnglarJs and React.<br/>"+
+        "Design and implement websites with Wordpress.",
         icon: "code"
       },
       {
         id: 2,
         title: "Mobile Development",
-        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
-        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
-        "Design and implement websites with Wordpress."],
+        description: "Develop new web applications using ASP.NET, web services, and MVC.<br/>"+
+        "In front-end have experience with jQuery, AnglarJs and React.<br/>"+
+        "Design and implement websites with Wordpress.",
         icon: "mobile"
       },
       {
         id: 3,
         title: "Desktop Development",
-        description: ["Develop new web applications using ASP.NET, web services, and MVC.",<br/>,
-        "In front-end have experience with jQuery, AnglarJs and React.",<br/>,
-        "Design and implement websites with Wordpress."],
+        description: "Develop new web applications using ASP.NET, web services, and MVC.<br/>"+
+        "In front-end have experience with jQuery, AnglarJs and React.<br/>"+
+        "Design and implement websites with Wordpress.",
         icon: "desktop"
       }
     ];
@@ -48,7 +48,6 @@ class Services extends Component {
             </div>
           </div>
           <div className="row">
-
           {this.services.map(service => {
             return (
               <ServiceItem key={service.id} {...service}/>
