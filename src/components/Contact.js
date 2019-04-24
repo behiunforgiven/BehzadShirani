@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
+export default () => {
+  
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
@@ -112,22 +108,20 @@ class Contact extends Component {
                         </p>
                         <ul className="list-ico">
                           <li>
-                            <span className="fa fa-map-marker" /> 329 WASHINGTON
-                            ST BOSTON, MA 02108
+                            <span className="fa fa-map-marker" > 329 WASHINGTON ST BOSTON, MA 02108 </span>
                           </li>
                           <li>
-                            <span className="fa fa-phone" /> (617) 557-0089
+                            <span className="fa fa-phone" > (617) 557-0089 </span>
                           </li>
                           <li>
-                            <span className="fa fa-envelope" />{" "}
-                            contact@example.com
+                            <span className="fa fa-envelope" > contact@example.com </span>
                           </li>
                         </ul>
                       </div>
                       <div className="socials">
                         <ul>
                           <li>
-                            <a href="https://facebook.com/behiunforgiven">
+                            <a href="https://facebook.com/behiunforgiven" rel="noopener noreferrer" target="_blank">
                               <span className="ico-circle">
                                 <i className="fa fa-facebook" />
                               </span>
@@ -181,6 +175,5 @@ class Contact extends Component {
       </section>
     );
   }
-}
 
-export default Contact;
+
