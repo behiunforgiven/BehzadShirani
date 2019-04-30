@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import ServiceItem from './SerivceItem';
 
-class Services extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.services = [
+export default () => {
+ 
+  const services = [
       {
         id: 1,
         title: "Web Development",
@@ -27,9 +25,8 @@ class Services extends Component {
         icon: "desktop"
       }
     ];
-   }
-  render() {
-    return (
+   
+  return (
       <section id="services" className="services-mf route">
         <div className="container">
           <div className="row">
@@ -44,7 +41,7 @@ class Services extends Component {
             </div>
           </div>
           <div className="row">
-          {this.services.map(service => {
+          {services.map(service => {
             return (
               <ServiceItem key={service.id} {...service}/>
             );
@@ -53,7 +50,7 @@ class Services extends Component {
         </div>
       </section>
     );
-  }
+  
 }
 
-export default Services;
+

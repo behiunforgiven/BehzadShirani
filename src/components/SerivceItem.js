@@ -1,21 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class SerivceItem extends Component {
-  render() {
+export default (props) => {
+  
     return (
       <div className="col-md-4">
         <div className="service-box">
           <div className="service-ico">
             <span className="ico-circle">
-              <i className={`fa fa-${this.props.icon}`} />
+              <i className={`fa fa-${props.icon}`} />
             </span>
           </div>
           <div className="service-content">
-            <h2 className="s-title">{this.props.title}</h2>
-            <p className="s-description text-justify" dangerouslySetInnerHTML={{__html: this.props.description}}></p>
+            <h2 className="s-title">{props.title}</h2>
+            <p className="s-description text-justify" dangerouslySetInnerHTML={{__html: props.description}}></p>
           </div>
         </div>
       </div>
     );
-  }
 }
