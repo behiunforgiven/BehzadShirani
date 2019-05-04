@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class About extends Component {
-  state = {};
-  render() {
+export default () => {
+  
     return (
       <section id="about" className="about-mf sect-pt4 route">
         <div className="container">
@@ -117,6 +116,6 @@ class About extends Component {
       </section>
     );
   }
-}
 
-export default About;
+
+

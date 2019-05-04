@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
 import IntroBackground from '../images/intro-bg-min.jpg';
 
-class Intro extends Component {
-  state = {};
-  render() {
+export default () => {
+
     return (
       <div
         id="home"
@@ -26,6 +25,5 @@ class Intro extends Component {
       </div>
     );
   }
-}
 
-export default Intro;
+

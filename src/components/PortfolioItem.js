@@ -1,32 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 
-
-export default class PortfolioItem extends Component {
-  
-
-  render() {
+export default (props) => {
     return (
       <div className="col-md-4">
         <div className="work-box">
-          <div className="work-container" onClick={() => this.props.openDialog(this.props)}>
+          <div className="work-container" onClick={() => props.openDialog(props)}>
             <div className="work-img">
-              <img src={this.props.image} alt="" className="img-fluid" />
+              <img src={props.image} alt="" className="img-fluid" />
             </div>
             <div className="work-content">
               <div className="row">
                 <div className="col-sm-8">
-                  <h2 className="w-title">{this.props.title}</h2>
+                  <h2 className="w-title">{props.title}</h2>
                   <div className="w-more">
-                    <span className="w-ctegory">{this.props.category}</span> /{" "}
-                    <span className="w-date">{this.props.date}</span>
+                    <span className="w-ctegory">{props.category}</span> /{" "}
+                    <span className="w-date">{props.date}</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     );
   }
-}

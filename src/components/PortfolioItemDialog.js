@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React,{ useState, useEffect } from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
@@ -9,35 +9,27 @@ function Transition(props) {
   return <Slide duration={800} direction="up" in={false} {...props} />;
 }
 
-export default class PortfolioItemDialog extends Component {
-  constructor(props) {
-    super(props);
+export default (props) => {
 
-    this.state = {
-      open: this.props.open
-    };
-  }
-
-  componentWillUpdate() {
-    this.setState({open : this.props.open});
-  }
-
-  handleBackdropClick = () => {
-    this.setState({ open: false });
-    this.props.close();
+  const {item} = props;
+  const [open, setOpen] = useState(props.open);
+  
+  useEffect(() => {
+    setOpen(props.open);
+  });
+  
+  const handleBackdropClick = () => {
+    setOpen(false);
+    props.close();
   };
-
-  render() {
-    
-    let {item} = this.props;
 
     return (
       <Dialog
-        onBackdropClick={this.handleBackdropClick}
+        onBackdropClick={handleBackdropClick}
         fullWidth={true}
         maxWidth="md"
         TransitionComponent={Transition}
-        open={this.state.open}
+        open={open}
         disableBackdropClick={false}
         aria-labelledby="max-width-dialog-title"
       >
@@ -50,4 +42,4 @@ export default class PortfolioItemDialog extends Component {
       </Dialog>
     );
   }
-}
+
