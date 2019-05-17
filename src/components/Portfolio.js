@@ -11,9 +11,16 @@ export default () => {
     {
       id: 1,
       image: require("../images/work-1.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
-      date: "18 Sep. 2018"
+      title: "MSC Sport Automation",
+      category: "Web Development",
+      date: "April 2013"
+    },
+    {
+      id: 6,
+      image: require("../images/work-6.jpg"),
+      title: "Hosco Sport Automation",
+      category: "Web Development",
+      date: "August 2016"
     },
     {
       id: 2,
@@ -39,15 +46,8 @@ export default () => {
     {
       id: 5,
       image: require("../images/work-5.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
-      date: "18 Sep. 2018"
-    },
-    {
-      id: 6,
-      image: require("../images/work-6.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
+      title: "Hosco Sport Automation",
+      category: "Web Development",
       date: "18 Sep. 2018"
     }
   ];

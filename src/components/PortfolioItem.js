@@ -10,7 +10,7 @@ export default (props) => {
             </div>
             <div className="work-content">
               <div className="row">
-                <div className="col-sm-8">
+                <div className="col-sm-12">
                   <h2 className="w-title">{props.title}</h2>
                   <div className="w-more">
                     <span className="w-ctegory">{props.category}</span> /{" "}
