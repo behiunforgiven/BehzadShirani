@@ -34,7 +34,7 @@ export default (props) => {
         aria-labelledby="max-width-dialog-title"
       >
         <DialogTitle id="max-width-dialog-title">{item.title}</DialogTitle>
-        <DialogContent>
+        <DialogContent dividers>
           <DialogContentText>
             You can set my maximum width and whether to adapt or not.
           </DialogContentText>

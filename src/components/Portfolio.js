@@ -18,37 +18,37 @@ export default () => {
     {
       id: 6,
       image: require("../images/work-6.jpg"),
-      title: "Hosco Sport Automation",
+      title: "Azad University Data Analysis",
       category: "Web Development",
-      date: "August 2016"
+      date: "May 2016"
     },
     {
       id: 2,
       image: require("../images/work-2.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
-      date: "18 Sep. 2018"
+      title: "Sepehr Sun Sesame Oil",
+      category: "Web Development",
+      date: "May 2015"
     },
     {
       id: 3,
       image: require("../images/work-3.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
-      date: "18 Sep. 2018"
+      title: "Safir Education Institute",
+      category: "Web Development",
+      date: "December 2018"
     },
     {
       id: 4,
       image: require("../images/work-4.jpg"),
-      title: "Lorem impsum dolor",
-      category: "Web Design",
-      date: "18 Sep. 2018"
+      title: "Behsa Jewelery Gallery",
+      category: "Web Development",
+      date: "September 2017"
     },
     {
       id: 5,
       image: require("../images/work-5.jpg"),
       title: "Hosco Sport Automation",
       category: "Web Development",
-      date: "18 Sep. 2018"
+      date: "August 2016"
     }
   ];
 
