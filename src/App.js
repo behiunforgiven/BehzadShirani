@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Nav from './components/Nav';
 import Intro from './components/Intro';
@@ -12,22 +12,20 @@ import 'animate.css/animate.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 
-class App extends Component {
 
-  
-
-  render() {
-    return (
-        <div>
+const App = () => {
+  return (
+      <>
         <Nav />
         <Intro />
         <About />
         <Services/>
         <Portfolio/>
         <Contact/>
-      </div>
-    );
-  }
+    </>
+  );
 }
 
 export default App;
+
+

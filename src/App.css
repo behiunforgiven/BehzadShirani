@@ -1264,3 +1264,7 @@ footer .credits a {
 .work-container {
   cursor: pointer;
 }
+
+.nav-item > a {
+  cursor: pointer;
+}

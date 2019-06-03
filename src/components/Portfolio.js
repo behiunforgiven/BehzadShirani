@@ -1,11 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
+import { StateProvider } from '../State';
 import PortfolioItem from "./PortfolioItem";
 import PortfolioItemDialog from "./PortfolioItemDialog";
 
-export default () => {
 
-  const [openDialog , setOpenDialog] = useState(false);
-  const [item, setItem] = useState({});
+const Portfolio = () => {
+
+  const initialState = {
+    isDialogOpen : false,
+    item : {}
+  };
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case 'openDialog':
+        return {
+          ...state,
+          isDialogOpen : true,
+          item: action.item
+        };
+
+        case 'closeDialog':
+          return {
+            ...state,
+            isDialogOpen : false
+          };
+        
+      default:
+        return state;
+    }
+  };
 
   const portfos = [
     {
@@ -52,48 +76,37 @@ export default () => {
     }
   ];
 
-  const afterClosePopup = () => {
-    setOpenDialog(false);
-  };
-
-  const handleOpen = (item) => {
-    setItem(item);
-    setOpenDialog(true);
-  };
-
   return (
-    <section id="work" className="portfolio-mf sect-pt4 route">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="title-box text-center">
-              <h3 className="title-a">Portfolio</h3>
-              <p className="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div className="line-mf" />
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <section id="work" className="portfolio-mf sect-pt4 route">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="title-box text-center">
+                <h3 className="title-a">Portfolio</h3>
+                <p className="subtitle-a">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div className="line-mf" />
+              </div>
             </div>
           </div>
+          <div className="row">
+            {
+              portfos.map(portfo => {
+                return (
+                  <PortfolioItem 
+                    key={portfo.id} 
+                    item={portfo}/>
+                );
+              })
+            }
+          </div>
         </div>
-        <div className="row">
-          {
-            portfos.map(portfo => {
-            return (
-              <PortfolioItem 
-                openDialog={() => handleOpen(portfo)} 
-                key={portfo.id} 
-                {...portfo}/>
-            );
-          })}
-        </div>
-      </div>
-      {openDialog ? (
-        <PortfolioItemDialog 
-          open={openDialog} 
-          item={item}
-          close={afterClosePopup}
-          />
-      ) : null}
-    </section>
+        <PortfolioItemDialog />
+      </section>
+    </StateProvider>
   );
 };
+
+export default Portfolio;
