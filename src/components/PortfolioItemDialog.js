@@ -10,7 +10,9 @@ const Transition = React.forwardRef((props, ref) =>
   <Slide ref={ref} duration={800} direction="up" in={false} {...props} />
 );
 
-export default () => {
+Transition.displayName = "Transition";
+
+const PortfolioItemDialog = () => {
 
   const [{ isDialogOpen , item }, dispatch] = useStore();
   
@@ -33,10 +35,11 @@ export default () => {
           <DialogTitle id="max-width-dialog-title">{item.title}</DialogTitle>
           <DialogContent dividers>
             <DialogContentText>
-              You can set my maximum width and whether to adapt or not.
+              
             </DialogContentText>
           </DialogContent>
         </Dialog>
     );
   }
 
+export default PortfolioItemDialog;

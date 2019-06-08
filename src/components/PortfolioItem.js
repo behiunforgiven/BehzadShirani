@@ -2,6 +2,7 @@ import React from "react";
 import { useStore} from '../State';
 
 const PortfolioItem = ({item}) => {
+  // eslint-disable-next-line no-empty-pattern
   const [{}, dispatch] = useStore();
 
     return (
