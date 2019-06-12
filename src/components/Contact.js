@@ -21,6 +21,7 @@ const Contact = () => {
                         <h5 className="title-left">Send Message Us</h5>
                       </div>
                       <div>
+                      
                         <form action="#" method="post" className="contactForm">
                           <div id="sendmessage">
                             Your message has been sent. Thank you!
@@ -160,7 +161,7 @@ const Contact = () => {
               <div className="col-sm-12">
                 <div className="copyright-box">
                   <p className="copyright">
-                    &copy; Copyright <strong>DevFolio</strong>. All Rights
+                    &copy; Copyright <strong>Behzad Shirani</strong>. All Rights
                     Reserved
                   </p>
                   <div className="credits" />
