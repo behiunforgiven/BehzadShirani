@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+const ServiceItem = (props) => {
   
     return (
       <div className="col-md-4">
@@ -18,3 +18,5 @@ export default (props) => {
       </div>
     );
 }
+
+export default ServiceItem;

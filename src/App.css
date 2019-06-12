@@ -430,6 +430,7 @@ a:hover {
   transition: all 500ms ease;
 }
 
+
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
   color: #1B1B1B;
@@ -1266,5 +1267,9 @@ footer .credits a {
 }
 
 .nav-item > a {
+  cursor: pointer;
+}
+
+a.navbar-brand {
   cursor: pointer;
 }

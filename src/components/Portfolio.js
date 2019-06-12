@@ -85,7 +85,7 @@ const Portfolio = () => {
               <div className="title-box text-center">
                 <h3 className="title-a">Portfolio</h3>
                 <p className="subtitle-a">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Some of my prior projects
                 </p>
                 <div className="line-mf" />
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const Contact = () => {
   
     return (
       <section
@@ -21,7 +21,7 @@ export default () => {
                         <h5 className="title-left">Send Message Us</h5>
                       </div>
                       <div>
-                        <form action="" method="post" className="contactForm">
+                        <form action="#" method="post" className="contactForm">
                           <div id="sendmessage">
                             Your message has been sent. Thank you!
                           </div>
@@ -100,21 +100,18 @@ export default () => {
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis dolorum dolorem soluta quidem expedita
-                          aperiam aliquid at. Totam magni ipsum suscipit amet?
-                          Autem nemo esse laboriosam ratione nobis mollitia
-                          inventore?
+                          Feel free to contact me about your projects. You can reach me in social networks
+                          or make a phone call. Also, this form and my email are available.
                         </p>
                         <ul className="list-ico">
                           <li>
-                            <span className="fa fa-map-marker" > 329 WASHINGTON ST BOSTON, MA 02108 </span>
+                            <span><i className="fa fa-map-marker"></i> Esfahan, Iran </span>
                           </li>
                           <li>
-                            <span className="fa fa-phone" > (617) 557-0089 </span>
+                            <span><i className="fa fa-phone"></i> +98-913-266-6946 </span>
                           </li>
                           <li>
-                            <span className="fa fa-envelope" > contact@example.com </span>
+                            <span><i className="fa fa-envelope"></i> me [at] behzadshirani.ir </span>
                           </li>
                         </ul>
                       </div>
@@ -175,5 +172,7 @@ export default () => {
       </section>
     );
   }
+
+  export default Contact;
 
 

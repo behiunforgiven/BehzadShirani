@@ -2,7 +2,7 @@ import React from "react";
 
 import IntroBackground from '../images/intro-bg-min.jpg';
 
-export default () => {
+const Intro = () => {
 
     return (
       <div
@@ -25,5 +25,7 @@ export default () => {
       </div>
     );
   }
+
+  export default Intro;
 
 

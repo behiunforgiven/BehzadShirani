@@ -1,7 +1,8 @@
+/* eslint-disable no-undef */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-export default () => {
+const Nav = () => {
   const [navClass, setNavClass] = useState("");
   const links = ["home", "about", "services", "work", "contact"];
 
@@ -80,3 +81,5 @@ export default () => {
     </nav>
   );
 };
+
+export default Nav;
