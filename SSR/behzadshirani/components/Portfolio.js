@@ -1,5 +1,5 @@
 import React from "react";
-import { StateProvider } from '../State';
+import { StateProvider } from './State';
 import PortfolioItem from "./PortfolioItem";
 import PortfolioItemDialog from "./PortfolioItemDialog";
 
