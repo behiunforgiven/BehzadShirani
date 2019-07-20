@@ -16,7 +16,7 @@ const About = () => {
                           <img
                             src="/static/images/behzad-shirani.jpg"
                             className="img-fluid rounded b-shadow-a"
-                            alt=""
+                            alt="Behzad Shirani - بهزاد شیرانی"
                           />
                         </div>
                       </div>
