@@ -32,7 +32,7 @@ const About = () => {
                           </p>
                           <p>
                             <span className="title-s">Email: </span>{" "}
-                            <span>shirani.developer[at]gmail</span>
+                            <span>me[at]behzadshirani.ir</span>
                           </p>
                           <p>
                             <span className="title-s">Phone: </span>{" "}

@@ -34,45 +34,52 @@ const Portfolio = () => {
   const portfos = [
     {
       id: 1,
-      image: "/static/images/work-1.jpg",
+      images: ["/static/images/work-1.jpg"],
       title: "MSC Sport Automation",
       category: "Web Development",
-      date: "April 2013"
+      date: "April 2013",
+      description: "MSC Sport Automation Web Application produced with ASP.NET Web Forms and ASP.NET MVC and jQuery. This web application has almost 70000 users.",
+      url: "http://sport.msc.ir"
     },
     {
       id: 6,
-      image: "/static/images/work-6.jpg",
+      images: ["/static/images/work-6.jpg"],
       title: "Azad University Data Analysis",
       category: "Web Development",
-      date: "May 2016"
+      date: "May 2016",
+      url: "http://payesh.khuisf.ac.ir"
     },
     {
       id: 2,
-      image: "/static/images/work-2.jpg",
+      images: ["/static/images/work-2.jpg"],
       title: "Sepehr Sun Sesame Oil",
       category: "Web Development",
-      date: "May 2015"
+      date: "May 2015",
+      url: "http://ssso.ir"
     },
     {
       id: 3,
-      image: "/static/images/work-3.jpg",
+      images: ["/static/images/work-3.jpg"],
       title: "Safir Education Institute",
       category: "Web Development",
-      date: "December 2018"
+      date: "December 2018",
+      url: "http://safiredu.com"
     },
     {
       id: 4,
-      image: "/static/images/work-4.jpg",
+      images: ["/static/images/work-4.jpg"],
       title: "Behsa Jewelery Gallery",
       category: "Web Development",
-      date: "September 2017"
+      date: "September 2017",
+      url: "https://BehsaGallery.ir"
     },
     {
       id: 5,
-      image: "/static/images/work-5.jpg",
+      images: ["/static/images/work-5.jpg"],
       title: "Hosco Sport Automation",
       category: "Web Development",
-      date: "August 2016"
+      date: "August 2016",
+      url: "https://sport.hosco.ir"
     }
   ];
 
@@ -93,11 +100,15 @@ const Portfolio = () => {
           </div>
           <div className="row">
             {
-              portfos.map(portfo => {
+              portfos.map((portfo,index) => {
+                
                 return (
+                  
                   <PortfolioItem 
                     key={portfo.id} 
-                    item={portfo}/>
+                    item={portfo}
+                    timeout={500 * index}
+                    />
                 );
               })
             }

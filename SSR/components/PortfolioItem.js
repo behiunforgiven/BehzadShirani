@@ -1,11 +1,13 @@
 import React from "react";
 import { useStore} from './State';
+import Grow from '@material-ui/core/Grow';
 
-const PortfolioItem = ({item}) => {
+const PortfolioItem = ({item,timeout}) => {
   // eslint-disable-next-line no-empty-pattern
   const [{}, dispatch] = useStore();
 
     return (
+      <Grow in={true} timeout={timeout}>
       <div className="col-md-4">
         <div className="work-box">
           <div className="work-container" onClick={() => dispatch({
@@ -13,7 +15,7 @@ const PortfolioItem = ({item}) => {
                       item: item
                     })}>
             <div className="work-img">
-              <img src={item.image} alt="" className="img-fluid" />
+              <img src={item.images[0]} alt="" className="img-fluid" />
             </div>
             <div className="work-content">
               <div className="row">
@@ -29,6 +31,7 @@ const PortfolioItem = ({item}) => {
           </div>
         </div>
       </div>
+      </Grow>
     );
   }
 

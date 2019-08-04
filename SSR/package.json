@@ -11,7 +11,7 @@
     "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "@material-ui/core": "^4.2.0",
+    "@material-ui/core": "^4.3.1",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
@@ -20,7 +20,7 @@
     "react-scroll": "^1.7.12"
   },
   "devDependencies": {
-    "file-loader": "^4.0.0",
-    "url-loader": "^2.0.1"
+    "file-loader": "^4.1.0",
+    "url-loader": "^2.1.0"
   }
 }
