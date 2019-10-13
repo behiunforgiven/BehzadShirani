@@ -20,6 +20,9 @@
     "react-scroll": "^1.7.14"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
     "file-loader": "^4.2.0",
     "url-loader": "^2.2.0"
   }

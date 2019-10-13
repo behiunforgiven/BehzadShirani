@@ -2,7 +2,6 @@ import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 import { useStore} from './State';
-import { isMetaProperty } from "@babel/types";
 
 const Transition = React.forwardRef((props, ref) => 
   <Slide ref={ref} duration={800} direction="up" in={false} {...props} />
@@ -36,7 +35,7 @@ const PortfolioItemDialog = () => {
         >
           <div className="card border-dark">
             <div className="card-header">
-              <a href={item.url} target="_blank"> {item.title} </a>
+              <a href={item.url} target="_blank" rel="noopener noreferrer"> {item.title} </a>
             </div>
             <img className="card-img-top" src={item.images[0]}/>
             <div className="card-body">
