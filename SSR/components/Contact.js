@@ -28,7 +28,10 @@ const Contact = () => {
                           let errors = {};
                           if (!values.name) {
                             errors.name = 'Please input your name';
-                          } else if (
+                          } else if (!values.message) {
+                            errors.message = 'Please input your message';
+                          } else
+                           if (
                             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                           ) {
                             errors.email = 'Invalid email address';
@@ -37,7 +40,7 @@ const Contact = () => {
                         }}
                         onSubmit={(values, { setSubmitting }) => {
                           setTimeout(() => {
-                            alert(JSON.stringify(values, null, 2));
+                            console.log(JSON.stringify(values, null, 2));
                             setSubmitting(false);
                           }, 4000);
                         }}
@@ -68,7 +71,7 @@ const Contact = () => {
                                     id="email"
                                     placeholder="Your Email"
                                   />
-                                  <ErrorMessage name="email" component="div" />
+                                  <ErrorMessage name="email" component="div" className="validation"/>
                                 </div>
                               </div>
 
@@ -81,25 +84,17 @@ const Contact = () => {
                                     rows="5"
                                     placeholder="Message"
                                   />
-                                  <ErrorMessage name="message" component="div" />
+                                  <ErrorMessage name="message" component="div" className="validation"/>
                                 </div>
                               </div>
-
 
                               <div className="col-md-12">
                                 <button
                                   disabled={isSubmitting}
                                   type="submit"
-                                  className="button button-a button-big button-rouded"
-                                >
+                                  className="button button-a button-big button-rouded">
                                   Send Message
-                                  {return (isSubmitting && (
-                                     <>
-                                  &nbsp;
-                                  <i className="fa fa-spin fa-spinner"></i>
-                                  </>
-                                  )
-                                  }
+                                  {isSubmitting && (<>&nbsp;<i className="fa fa-spin fa-spinner"></i></>)}
                               </button>
                               </div>
 
