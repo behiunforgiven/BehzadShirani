@@ -1,31 +1,29 @@
 import React from "react";
-import { StateProvider } from './State';
+import { StateProvider } from "./State";
 import PortfolioItem from "./PortfolioItem";
 import PortfolioItemDialog from "./PortfolioItemDialog";
 
-
 const Portfolio = () => {
-
   const initialState = {
-    isDialogOpen : false,
-    item : {}
+    isDialogOpen: false,
+    item: {}
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case 'openDialog':
+      case "openDialog":
         return {
           ...state,
-          isDialogOpen : true,
+          isDialogOpen: true,
           item: action.item
         };
 
-        case 'closeDialog':
-          return {
-            ...state,
-            isDialogOpen : false
-          };
-        
+      case "closeDialog":
+        return {
+          ...state,
+          isDialogOpen: false
+        };
+
       default:
         return state;
     }
@@ -38,7 +36,8 @@ const Portfolio = () => {
       title: "MSC Sport Automation",
       category: "Web Development",
       date: "April 2013",
-      description: "MSC Sport Automation Web Application produced with ASP.NET Web Forms and ASP.NET MVC and jQuery. This web application has almost 70000 users.",
+      description:
+        "MSC Sport Automation Web Application produced with ASP.NET Web Forms and ASP.NET MVC and jQuery. This web application has almost 70000 users.",
       url: "http://sport.msc.ir"
     },
     {
@@ -71,7 +70,7 @@ const Portfolio = () => {
       title: "Behsa Jewelery Gallery",
       category: "Web Development",
       date: "September 2017",
-      url: "https://BehsaGallery.ir"
+      url: "http://BehsaGallery.ir"
     },
     {
       id: 5,
@@ -91,27 +90,21 @@ const Portfolio = () => {
             <div className="col-sm-12">
               <div className="title-box text-center">
                 <h3 className="title-a">Portfolio</h3>
-                <p className="subtitle-a">
-                  Some of my prior projects
-                </p>
+                <p className="subtitle-a">Some of my prior projects</p>
                 <div className="line-mf" />
               </div>
             </div>
           </div>
           <div className="row">
-            {
-              portfos.map((portfo,index) => {
-                
-                return (
-                  
-                  <PortfolioItem 
-                    key={portfo.id} 
-                    item={portfo}
-                    timeout={500 * index}
-                    />
-                );
-              })
-            }
+            {portfos.map((portfo, index) => {
+              return (
+                <PortfolioItem
+                  key={portfo.id}
+                  item={portfo}
+                  timeout={500 * index}
+                />
+              );
+            })}
           </div>
         </div>
         <PortfolioItemDialog />
