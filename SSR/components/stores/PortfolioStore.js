@@ -12,6 +12,11 @@ class PortfolioStore{
         
       }
 
+      @action closeDialog = () => {
+        this.isDialogOpen = false;
+        this.portfolioItem = {};
+      }
+
 }
  
 const store = new PortfolioStore();

@@ -7,7 +7,7 @@ const ServiceItem = (props) => {
         <div className="service-box">
           <div className="service-ico">
             <span className="ico-circle">
-              <i className={`fa fa-${props.icon}`} />
+              {props.icon}
             </span>
           </div>
           <div className="service-content">

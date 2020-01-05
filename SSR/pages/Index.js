@@ -2,18 +2,17 @@ import React from 'react';
 import {Provider} from 'mobx-react'
 
 import Head from 'next/head';
-import Nav from '../components/Nav';
-import Intro from '../components/Intro';
-import About from '../components/About';
-import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
-import Contact from '../components/Contact';
+import Nav from '../components/views/Nav';
+import Intro from '../components/views/Intro';
+import About from '../components/views/About';
+import Services from '../components/views/Services';
+import Portfolio from '../components/views/Portfolio';
+import Contact from '../components/views/Contact';
 
 import PortfolioStore from '../components/stores/PortfolioStore'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import './Index.css';
 
 

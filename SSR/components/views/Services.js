@@ -1,4 +1,5 @@
 import React from "react";
+import { Code, PhoneAndroid , DesktopWindows } from '@material-ui/icons';
 import ServiceItem from './SerivceItem';
 
 export default () => {
@@ -10,19 +11,19 @@ export default () => {
         description: "Develop new web applications using ASP.NET, web services, and MVC.<br/>"+
         "In front-end have experience with jQuery, AnglarJs and React.<br/>"+
         "Design and implement websites with Wordpress.",
-        icon: "code"
+        icon: <Code style={{fontSize: '5rem'}}/>
       },
       {
         id: 2,
         title: "Mobile Development",
         description: "A forward-thinking developer offering more than three years of experience building, integrating, and supporting Android applications for mobile and tablet devices on the Android platform seeks position with a top technology firm.",
-        icon: "mobile"
+        icon: <PhoneAndroid style={{fontSize: '4rem'}}/>
       },
       {
         id: 3,
         title: "Desktop Development",
         description: "Develop legacy and modern desktop applications. In Microsoft stach have experience with Windows Forms and WPF, also have good experience building modern cross platform desktop applications with Electron.",
-        icon: "desktop"
+        icon: <DesktopWindows style={{fontSize: '4rem'}}/>
       }
     ];
    

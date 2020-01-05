@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Room , PhoneAndroid , Email , Facebook , Instagram , Twitter , Pinterest} from '@material-ui/icons';
 
 const Contact = () => {
 
@@ -115,13 +116,13 @@ const Contact = () => {
                         </p>
                       <ul className="list-ico">
                         <li>
-                          <span><i className="fa fa-map-marker"></i> Esfahan, Iran </span>
+                          <span><Room /> Esfahan, Iran </span>
                         </li>
                         <li>
-                          <span><i className="fa fa-phone"></i> +98-913-266-6946 </span>
+                          <span><PhoneAndroid/> +98-913-266-6946 </span>
                         </li>
                         <li>
-                          <span><i className="fa fa-envelope"></i> me [at] behzadshirani.ir </span>
+                          <span><Email/> me [at] behzadshirani.ir </span>
                         </li>
                       </ul>
                     </div>
@@ -130,28 +131,28 @@ const Contact = () => {
                         <li>
                           <a href="https://facebook.com/behiunforgiven" rel="noopener noreferrer" target="_blank">
                             <span className="ico-circle">
-                              <i className="fa fa-facebook" />
+                              <Facebook />
                             </span>
                           </a>
                         </li>
                         <li>
                           <a href="https://instagram.com/behiunforgiven">
                             <span className="ico-circle">
-                              <i className="fa fa-instagram" />
+                              <Instagram/>
                             </span>
                           </a>
                         </li>
                         <li>
                           <a href="https://twitter.com/behiunforgiven">
                             <span className="ico-circle">
-                              <i className="fa fa-twitter" />
+                              <Twitter/>
                             </span>
                           </a>
                         </li>
                         <li>
                           <a href="https://pinterest.com/behiunforgiven">
                             <span className="ico-circle">
-                              <i className="fa fa-pinterest" />
+                              <Pinterest />
                             </span>
                           </a>
                         </li>
