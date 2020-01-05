@@ -1,4 +1,5 @@
 import React from "react";
+import {inject , observer} from 'mobx-react';
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 
@@ -9,10 +10,13 @@ const Transition = React.forwardRef((props, ref) => (
 
 Transition.displayName = "Transition";
 
-const PortfolioItemDialog = () => {
+const PortfolioItemDialog  = inject("PortfolioStore")(observer(({PortfolioStore}) => {
   
+  const item = PortfolioStore.portfolioItem;
+  const isDialogOpen = PortfolioStore.isDialogOpen;
+
   const handleBackdropClick = () => {
-    //close dialog
+    PortfolioStore.closeDialog();
   };
 
   if (typeof item.images === "undefined") item.images = [];
@@ -41,6 +45,6 @@ const PortfolioItemDialog = () => {
       </div>
     </Dialog>
   );
-};
+}));
 
 export default PortfolioItemDialog;
