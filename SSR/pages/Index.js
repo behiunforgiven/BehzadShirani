@@ -1,4 +1,5 @@
 import React from 'react';
+import {Provider} from 'mobx-react'
 
 import Head from 'next/head';
 import Nav from '../components/Nav';
@@ -8,6 +9,8 @@ import Services from '../components/Services';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 
+import PortfolioStore from '../components/stores/PortfolioStore'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -16,7 +19,7 @@ import './Index.css';
 
 const App = () => {
   return (
-    <>
+    <Provider PortfolioStore={PortfolioStore}>
       <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -39,7 +42,7 @@ const App = () => {
       <Services />
       <Portfolio />
       <Contact />
-    </>
+    </Provider>
   );
 }
 

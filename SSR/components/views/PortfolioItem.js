@@ -1,19 +1,16 @@
 import React from "react";
-import { useStore} from './State';
+
 import Grow from '@material-ui/core/Grow';
 
 const PortfolioItem = ({item,timeout}) => {
-  // eslint-disable-next-line no-empty-pattern
-  const [{}, dispatch] = useStore();
-
+  
     return (
       <Grow in={true} timeout={timeout}>
       <div className="col-md-4">
         <div className="work-box">
-          <div className="work-container" onClick={() => dispatch({
-                      type: 'openDialog',
-                      item: item
-                    })}>
+          <div className="work-container" onClick={() => 
+          //opendialog with item
+          }>
             <div className="work-img">
               <img src={item.images[0]} alt="" className="img-fluid" />
             </div>

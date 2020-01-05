@@ -1,34 +1,9 @@
 import React from "react";
-import { StateProvider } from "./State";
 import PortfolioItem from "./PortfolioItem";
 import PortfolioItemDialog from "./PortfolioItemDialog";
 
 const Portfolio = () => {
-  const initialState = {
-    isDialogOpen: false,
-    item: {}
-  };
-
-  const reducer = (state, action) => {
-    switch (action.type) {
-      case "openDialog":
-        return {
-          ...state,
-          isDialogOpen: true,
-          item: action.item
-        };
-
-      case "closeDialog":
-        return {
-          ...state,
-          isDialogOpen: false
-        };
-
-      default:
-        return state;
-    }
-  };
-
+  
   const portfos = [
     {
       id: 1,
@@ -83,7 +58,6 @@ const Portfolio = () => {
   ];
 
   return (
-    <StateProvider initialState={initialState} reducer={reducer}>
       <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
           <div className="row">
@@ -109,7 +83,6 @@ const Portfolio = () => {
         </div>
         <PortfolioItemDialog />
       </section>
-    </StateProvider>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
-import { useStore } from "./State";
+
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide ref={ref} duration={800} direction="up" in={false} {...props} />
@@ -10,12 +10,9 @@ const Transition = React.forwardRef((props, ref) => (
 Transition.displayName = "Transition";
 
 const PortfolioItemDialog = () => {
-  const [{ isDialogOpen, item }, dispatch] = useStore();
-
+  
   const handleBackdropClick = () => {
-    dispatch({
-      type: "closeDialog"
-    });
+    //close dialog
   };
 
   if (typeof item.images === "undefined") item.images = [];

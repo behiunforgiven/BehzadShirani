@@ -7,16 +7,18 @@
     "prod": "next export"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "next": "^9.1.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
     "@material-ui/core": "^4.5.0",
+    "@zeit/next-css": "^1.0.1",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "formik": "^1.5.8",
-    "react-scripts": "3.2.0",
+    "mobx": "^5.15.1",
+    "mobx-react": "^6.1.4",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.3.0",
     "react-scroll": "^1.7.14"
   },
   "devDependencies": {
