@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from "react";
-import { Link, Events } from "react-scroll";
+import { Link } from "react-scroll";
 import { ClickAwayListener } from '@material-ui/core';
 
 const Nav = () => {
@@ -17,10 +17,6 @@ const Nav = () => {
         setNavClass("navbar-trans");
       }
     }
-
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", to, element);
-    });
 
     window.addEventListener("scroll", handleScroll);
 
