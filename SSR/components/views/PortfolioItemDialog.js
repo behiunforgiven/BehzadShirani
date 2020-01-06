@@ -10,18 +10,20 @@ const Transition = React.forwardRef((props, ref) => (
 
 Transition.displayName = "Transition";
 
-const PortfolioItemDialog  = inject("PortfolioStore")(observer(({PortfolioStore}) => {
+const PortfolioItemDialog  = inject("portfolioStore")(
+  observer(({portfolioStore}) => {
   
-  const item = PortfolioStore.portfolioItem;
-  const isDialogOpen = PortfolioStore.isDialogOpen;
+  const item = portfolioStore.portfolioItem;
+  const isDialogOpen = portfolioStore.isDialogOpen;
 
   const handleBackdropClick = () => {
-    PortfolioStore.closeDialog();
+    portfolioStore.closeDialog();
   };
 
-  if (typeof item.images === "undefined") item.images = [];
-
+  
   return (
+    item == null ?
+    <></> :
     <Dialog
       onBackdropClick={handleBackdropClick}
       fullWidth={true}

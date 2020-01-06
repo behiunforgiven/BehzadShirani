@@ -3,7 +3,7 @@ import { observable , action } from "mobx"
 class PortfolioStore{
 
       @observable isDialogOpen = false;
-      @observable portfolioItem = {};
+      @observable portfolioItem = null;
 
       @action openDialog = (item) => {
 
@@ -14,11 +14,9 @@ class PortfolioStore{
 
       @action closeDialog = () => {
         this.isDialogOpen = false;
-        this.portfolioItem = {};
+        this.portfolioItem = null;
       }
 
 }
- 
-const store = new PortfolioStore();
 
-export default store;
+export default PortfolioStore;

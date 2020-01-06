@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, Events } from "react-scroll";
 import { ClickAwayListener } from '@material-ui/core';
 
 const Nav = () => {
@@ -17,6 +17,10 @@ const Nav = () => {
         setNavClass("navbar-trans");
       }
     }
+
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", to, element);
+    });
 
     window.addEventListener("scroll", handleScroll);
 
@@ -40,6 +44,7 @@ const Nav = () => {
             smooth={true}
             offset={0}
             duration={500}
+            
           >
             Behzad Shirani
         </Link>
@@ -72,6 +77,8 @@ const Nav = () => {
                       smooth="easeInOutQuint"
                       offset={-70}
                       duration={800}
+                      onSetActive={(link) => console.log(link)}
+                      
                     >
                       {link}
                     </Link>

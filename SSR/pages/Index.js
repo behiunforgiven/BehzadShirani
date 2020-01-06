@@ -9,7 +9,7 @@ import Services from '../components/views/Services';
 import Portfolio from '../components/views/Portfolio';
 import Contact from '../components/views/Contact';
 
-import PortfolioStore from '../components/stores/PortfolioStore'
+import initializeStore from '../components/stores/RootStore';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css';
@@ -17,8 +17,11 @@ import './Index.css';
 
 
 const App = () => {
+
+  const mobxStore = initializeStore();
+
   return (
-    <Provider PortfolioStore={PortfolioStore}>
+    <Provider {...mobxStore}>
       <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
