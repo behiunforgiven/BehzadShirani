@@ -1,5 +1,4 @@
 import React from 'react';
-import {Provider} from 'mobx-react'
 
 import Head from 'next/head';
 import Nav from '../components/views/Nav';
@@ -9,7 +8,7 @@ import Services from '../components/views/Services';
 import Portfolio from '../components/views/Portfolio';
 import Contact from '../components/views/Contact';
 
-import initializeStore from '../components/stores/RootStore';
+import { StoreProvider } from '../components/stores/RootStore';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css';
@@ -18,10 +17,8 @@ import './Index.css';
 
 const App = () => {
 
-  const mobxStore = initializeStore();
-
   return (
-    <Provider {...mobxStore}>
+    <StoreProvider>
       <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -44,7 +41,7 @@ const App = () => {
       <Services />
       <Portfolio />
       <Contact />
-    </Provider>
+    </StoreProvider>
   );
 }
 

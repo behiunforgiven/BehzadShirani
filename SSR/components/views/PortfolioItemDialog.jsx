@@ -1,5 +1,5 @@
 import React from "react";
-import {inject , observer} from 'mobx-react';
+import { useStores } from "../stores/RootStore";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 
@@ -10,9 +10,9 @@ const Transition = React.forwardRef((props, ref) => (
 
 Transition.displayName = "Transition";
 
-const PortfolioItemDialog  = inject("portfolioStore")(
-  observer(({portfolioStore}) => {
+const PortfolioItemDialog  = () =>{
   
+  const { portfolioStore } = useStores();
   const item = portfolioStore.portfolioItem;
   const isDialogOpen = portfolioStore.isDialogOpen;
 
@@ -47,6 +47,6 @@ const PortfolioItemDialog  = inject("portfolioStore")(
       </div>
     </Dialog>
   );
-}));
+};
 
 export default PortfolioItemDialog;

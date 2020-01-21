@@ -1,9 +1,11 @@
 import React from "react";
-import { inject, observer } from "mobx-react";
+import { useStores } from "../stores/RootStore";
 import Grow from "@material-ui/core/Grow";
 
-var PortfolioItem = inject("portfolioStore")(
-  observer(({ portfolioStore, item, timeout }) => {
+const PortfolioItem = ( {item, timeout }) => {
+
+  const { portfolioStore } = useStores();
+
     return (
       <Grow in={true} timeout={timeout}>
         <div className="col-md-4">
@@ -31,7 +33,6 @@ var PortfolioItem = inject("portfolioStore")(
         </div>
       </Grow>
     );
-  })
-);
+  }
 
 export default PortfolioItem;
