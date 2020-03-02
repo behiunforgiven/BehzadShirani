@@ -1,20 +1,22 @@
-import {observer,useLocalStore} from 'mobx-react'
+import { observable , action } from "mobx"
 
- const PortfolioStore = observer(() => {
-  const store = useLocalStore({
-    isDialogOpen: false,
-    portfolioItem: null,
-    openDialog: (item) => {
-      store.isDialogOpen = true;
-      store.portfolioItem = item;
-    },
-    closeDialog: () => {
-      store.isDialogOpen = false;
-      store.portfolioItem = null;
-    }
-  })
+class PortfolioStore{
 
-  return store;
-})
+      @observable isDialogOpen = false;
+      @observable portfolioItem = null;
+
+      @action openDialog = (item) => {
+
+        this.isDialogOpen = true;
+        this.portfolioItem = item;
+        
+      }
+
+      @action closeDialog = () => {
+        this.isDialogOpen = false;
+        this.portfolioItem = null;
+      }
+
+}
 
 export default PortfolioStore;
