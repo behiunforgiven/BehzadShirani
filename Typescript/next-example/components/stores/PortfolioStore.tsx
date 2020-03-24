@@ -2,8 +2,8 @@ import { observable , action } from "mobx"
 
 class PortfolioStore{
 
-      @observable isDialogOpen = false;
-      @observable portfolioItem = null;
+      @observable isDialogOpen: boolean = false;
+      @observable portfolioItem : PortolioItem = null;
 
       @action openDialog = (item) => {
 
