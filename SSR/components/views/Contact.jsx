@@ -20,7 +20,7 @@ const Contact = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="title-box-2">
-                      <h5 className="title-left">Send Message Us</h5>
+                      <h5 className="title-left">Send Message</h5>
                     </div>
                     <div>
                       <Formik
@@ -39,15 +39,9 @@ const Contact = () => {
                           }
                           return errors;
                         }}
-                        onSubmit={(values, { setSubmitting }) => {
-                          setTimeout(() => {
-                            console.log(JSON.stringify(values, null, 2));
-                            setSubmitting(false);
-                          }, 4000);
-                        }}
                       >
                         {({ isSubmitting }) => (
-                          <Form className="contactForm">
+                          <Form className="contactForm" action="https://submit-form.com/MlAEWRAg">
                             <div className="row">
 
                               <div className="col-md-12 mb-3">
