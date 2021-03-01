@@ -12,7 +12,7 @@ const ServiceItem = (props) => {
           </div>
           <div className="service-content">
             <h2 className="s-title">{props.title}</h2>
-            <p className="s-description text-justify" dangerouslySetInnerHTML={{__html: props.description}}></p>
+            <p className="s-description" dangerouslySetInnerHTML={{__html: props.description}}></p>
           </div>
         </div>
       </div>

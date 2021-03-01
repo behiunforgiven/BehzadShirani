@@ -1,8 +1,32 @@
-import React from "react";
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import React, { useState } from "react";
 import { Room , PhoneAndroid , Email , Facebook , Instagram , Twitter , Pinterest} from '@material-ui/icons';
 
+const FORMSPARK_ACTION_URL = "https://submit-form.com/MlAEWRAg";
+
 const Contact = () => {
+
+  const [message, setMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    setSubmitting(true);
+
+    await fetch(FORMSPARK_ACTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        message,
+      }),
+    });
+
+    setSubmitting(false);
+    alert("Form submitted");
+  };
 
   return (
     <section
@@ -23,80 +47,63 @@ const Contact = () => {
                       <h5 className="title-left">Send Message</h5>
                     </div>
                     <div>
-                      <Formik
-                        initialValues={{ name: '', email: '',message : '' }}
-                        validate={values => {
-                          let errors = {};
-                          if (!values.name) {
-                            errors.name = 'Please input your name';
-                          } else if (!values.message) {
-                            errors.message = 'Please input your message';
-                          } else
-                           if (
-                            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                          ) {
-                            errors.email = 'Invalid email address';
-                          }
-                          return errors;
-                        }}
-                      >
-                        {({ isSubmitting }) => (
-                          <Form className="contactForm" action="https://submit-form.com/MlAEWRAg">
+                      
+                        
+                          <form className="contactForm" onSubmit={onSubmit}>
                             <div className="row">
 
                               <div className="col-md-12 mb-3">
                                 <div className="form-group">
-                                  <Field
+                                  <input
                                     type="text"
                                     name="name"
                                     className="form-control"
                                     id="name"
                                     placeholder="Your Name"
                                   />
-                                  <ErrorMessage name="name" component="div" className="validation" />
+                                 
                                 </div>
                               </div>
 
                               <div className="col-md-12 mb-3">
                                 <div className="form-group">
-                                  <Field
+                                  <input
                                     type="email"
                                     className="form-control"
                                     name="email"
                                     id="email"
                                     placeholder="Your Email"
                                   />
-                                  <ErrorMessage name="email" component="div" className="validation"/>
+                                  
                                 </div>
                               </div>
 
                               <div className="col-md-12 mb-3">
                                 <div className="form-group">
-                                  <Field
-                                    component="textarea"
+                                  <textarea
+                                    value={message} onChange={(e) => setMessage(e.target.value)}
                                     className="form-control"
                                     name="message"
                                     rows="5"
                                     placeholder="Message"
                                   />
-                                  <ErrorMessage name="message" component="div" className="validation"/>
+                                  
                                 </div>
                               </div>
 
                               <div className="col-md-12">
                                 <button
-                                  disabled={isSubmitting}
+                                  disabled={submitting}
                                   type="submit"
                                   className="button button-a button-big button-rouded">
                                   Send Message
-                                  {isSubmitting && (<>&nbsp;<i className="fa fa-spin fa-spinner"></i></>)}
+                                  {submitting && (<>&nbsp;<i className="fa fa-spin fa-spinner"></i></>)}
                               </button>
                               </div>
 
                             </div>
-                          </Form>
-                        )}
-                      </Formik>
+                          </form>
+                        
                     </div>
                   </div>
                   <div className="col-md-6">
