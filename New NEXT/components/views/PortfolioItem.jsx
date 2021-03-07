@@ -3,14 +3,16 @@ import { inject, observer } from "mobx-react";
 import Grow from "@material-ui/core/Grow";
 
 var PortfolioItem = inject("portfolioStore")(
-  observer(({ portfolioStore, item, timeout }) => {
+  observer(({ item, timeout }) => {
     return (
       <Grow in={true} timeout={timeout}>
         <div className="col-md-4">
           <div className="work-box">
-            <div
+            <a
               className="work-container"
-              onClick={() => portfolioStore.openDialog(item)}
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="work-img">
                 <img src={item.images[0]} alt="" className="img-fluid" />
@@ -26,7 +28,7 @@ var PortfolioItem = inject("portfolioStore")(
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </Grow>
