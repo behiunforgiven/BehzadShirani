@@ -1,31 +1,32 @@
 import React, { useState } from "react";
 import { Room , PhoneAndroid , Email , Facebook , Instagram , Twitter , Pinterest} from '@material-ui/icons';
+import emailjs from 'emailjs-com';
 
 const FORMSPARK_ACTION_URL = "https://submit-form.com/MlAEWRAg";
 
 const Contact = () => {
 
-  const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
 
     setSubmitting(true);
 
-    await fetch(FORMSPARK_ACTION_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        message,
-      }),
-    });
+    emailjs.sendForm('service_3zktasw', 'template_orckg09', e.target, 'user_kYn01onPjfHLtRZJW5wd9')
+      .then((result) => {
+        setSubmitting(false);
+        alert("Form submitted");
 
-    setSubmitting(false);
-    alert("Form submitted");
+          console.log(result.text);
+      }, (error) => {
+
+        setSubmitting(false);
+          alert("Error Form submitted");
+          console.log(error.text);
+      });
+
+    
   };
 
   return (
@@ -81,7 +82,6 @@ const Contact = () => {
                               <div className="col-md-12 mb-3">
                                 <div className="form-group">
                                   <textarea
-                                    value={message} onChange={(e) => setMessage(e.target.value)}
                                     className="form-control"
                                     name="message"
                                     rows="5"
