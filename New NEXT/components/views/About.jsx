@@ -15,7 +15,7 @@ const About = () => {
                       <div className="col-sm-6 col-md-5">
                         <div className="about-img">
                           <img
-                            src="/static/images/behzad-shirani.jpg"
+                            src="/images/behzad-shirani.jpg"
                             className="img-fluid rounded b-shadow-a"
                             alt="Behzad Shirani - بهزاد شیرانی"
                           />

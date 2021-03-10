@@ -73,8 +73,6 @@ const Nav = () => {
                       smooth="easeInOutQuint"
                       offset={-70}
                       duration={800}
-                      onSetActive={(link) => console.log(link)}
-                      
                     >
                       {link}
                     </Link>

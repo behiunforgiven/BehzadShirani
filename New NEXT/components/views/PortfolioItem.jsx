@@ -3,9 +3,9 @@ import { inject, observer } from "mobx-react";
 import Grow from "@material-ui/core/Grow";
 
 var PortfolioItem = inject("portfolioStore")(
-  observer(({ item, timeout }) => {
+  observer(({ item, timeout,trigger }) => {
     return (
-      <Grow in={true} timeout={timeout}>
+      <Grow in={trigger} timeout={timeout}>
         <div className="col-md-4">
           <div className="work-box">
             <a

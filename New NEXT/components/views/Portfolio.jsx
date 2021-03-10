@@ -1,13 +1,19 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import PortfolioItemDialog from "./PortfolioItemDialog";
+import { useScrollTrigger } from "@material-ui/core"
 
 const Portfolio = () => {
   
+  const trigger = useScrollTrigger({
+    disableHysteresis : true,
+    threshold:500
+  });
+
   const portfos = [
     {
       id: 1,
-      images: ["/static/images/work-1.jpg"],
+      images: ["/images/work-1.jpg"],
       title: "MSC Sport Automation",
       category: "Web Development",
       date: "April 2013",
@@ -17,7 +23,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      images: ["/static/images/work-6.jpg"],
+      images: ["/images/work-6.jpg"],
       title: "Azad University Data Analysis",
       category: "Web Development",
       date: "May 2016",
@@ -25,7 +31,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      images: ["/static/images/work-2.jpg"],
+      images: ["/images/work-2.jpg"],
       title: "Sepehr Sun Sesame Oil",
       category: "Web Development",
       date: "May 2015",
@@ -33,7 +39,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      images: ["/static/images/work-3.jpg"],
+      images: ["/images/work-3.jpg"],
       title: "Safir Education Institute",
       category: "Web Development",
       date: "December 2018",
@@ -41,7 +47,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      images: ["/static/images/work-4.jpg"],
+      images: ["/images/work-4.jpg"],
       title: "Behsa Jewelery Gallery",
       category: "Web Development",
       date: "September 2017",
@@ -49,7 +55,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      images: ["/static/images/work-5.jpg"],
+      images: ["/images/work-5.jpg"],
       title: "Hosco Sport Automation",
       category: "Web Development",
       date: "August 2016",
@@ -76,6 +82,8 @@ const Portfolio = () => {
                   key={portfo.id}
                   item={portfo}
                   timeout={500 * index}
+                  trigger={trigger}
+                  
                 />
               );
             })}

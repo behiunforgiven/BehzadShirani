@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Room , PhoneAndroid , Email , Facebook , Instagram , Twitter , Pinterest} from '@material-ui/icons';
 import emailjs from 'emailjs-com';
 
-const FORMSPARK_ACTION_URL = "https://submit-form.com/MlAEWRAg";
-
 const Contact = () => {
 
   const [submitting, setSubmitting] = useState(false);
@@ -33,7 +31,7 @@ const Contact = () => {
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
       style={{
-        backgroundImage: "url(/static/images/overlay-bg.jpg)"
+        backgroundImage: "url(/images/overlay-bg.jpg)"
       }}
     >
       <div className="overlay-mf" />
